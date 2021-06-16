@@ -13,7 +13,6 @@ from lifelines import CoxPHFitter
 from multiprocessing import Pool, cpu_count
 from sklearn import preprocessing
 
-
 def aa_analysis(df, property):
     if property == "ncpr":
         df = df[pd.notnull(df['Amino_acids'])]
