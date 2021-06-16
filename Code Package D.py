@@ -540,8 +540,7 @@ def kmcurve(mutants, cdr3):
         return results, raws
     return results, raws
 
-maindir = "/home/boris/emcloud/usfboxsync/Boris Blanck Lab Work/"
-#maindir = "/Users/boris/Box Sync/Boris Blanck Lab Work/"
+maindir = ""
 cancers = [ name for name in os.listdir(maindir + "VDJ Recoveries/") if os.path.isdir(os.path.join(maindir, "VDJ Recoveries/", name))]
 print cancers
 allresults= pd.DataFrame()
